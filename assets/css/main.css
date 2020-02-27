@@ -7,6 +7,25 @@
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 */
 
+
+/* MY CODE --------------------------------------------------------------------- */
+
+
+@font-face {
+	font-family: "Title-Brightshine";
+	/* src: url("../webfonts/BrightShine-Title/brightshine_script_typeface-webfont.woff") format("woff"); */
+	src: url("../webfonts/BrightShine-Title/Brightshine\ Script\ Typeface.otf") format("opentype");
+	src: url("../webfonts/BrightShine-Title/Brightshine\ Script\ Typeface.ttf") format("truetype");
+	/* src: url("../webfonts/manteka/manteka.ttf") format("truetype"); */
+
+	font-stretch: normal; 
+	font-weight: normal; 
+	font-style: normal;
+	}
+
+
+/* ------------------------------------------------------------------------------- */
+
 html, body, div, span, applet, object,
 iframe, h1, h2, h3, h4, h5, h6, p, blockquote,
 pre, a, abbr, acronym, address, big, cite,
@@ -553,11 +572,14 @@ input, select, textarea {
 		width: 90%;
 	}
 
+
 		#header h1 {
-			font-size: 4.35em;
+			font-size: 8.35em;
 			font-weight: 900;
 			letter-spacing: -0.035em;
 			line-height: 1em;
+			font-family: "Title-Brightshine";
+
 		}
 
 		#header p {
