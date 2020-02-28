@@ -14,8 +14,8 @@
 @font-face {
 	font-family: "Title-Brightshine";
 	/* src: url("../webfonts/BrightShine-Title/brightshine_script_typeface-webfont.woff") format("woff"); */
-	src: url("../webfonts/BrightShine-Title/Brightshine\ Script\ Typeface.otf") format("opentype");
-	src: url("../webfonts/BrightShine-Title/Brightshine\ Script\ Typeface.ttf") format("truetype");
+	src: url("../webfonts/Stay-Classy-Free-Font/Stay\ Classy\ SLDT.otf") format("opentype");
+	src: url("../webfonts/Stay-Classy-Free-Font/Stay\ Classy\ SLDT.ttf") format("truetype");
 	/* src: url("../webfonts/manteka/manteka.ttf") format("truetype"); */
 
 	font-stretch: normal; 
@@ -245,7 +245,9 @@ input, select, textarea {
 		transform: translate3d(0,0,0);
 	/* Set your background with this */
 
-		background: #348cb2 url("images/bg.jpg") bottom left;
+		/* background: #348cb2 url("images/bg.jpg") bottom left; */
+		background: #1085e0 url("images/bg_1.jpg") bottom left;
+
 		background-repeat: repeat-x;
 		height: 100%;
 		left: 0;
@@ -574,11 +576,13 @@ input, select, textarea {
 
 
 		#header h1 {
-			font-size: 8.35em;
+			font-size: 5.35em;
 			font-weight: 900;
 			letter-spacing: -0.035em;
 			line-height: 1em;
 			font-family: "Title-Brightshine";
+			transform: scale(2, 1);
+
 
 		}
 
