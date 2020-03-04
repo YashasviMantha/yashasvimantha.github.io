@@ -234,7 +234,7 @@ input, select, textarea {
 		-moz-animation: bg 60s linear infinite;
 		-webkit-animation: bg 60s linear infinite;
 		-ms-animation: bg 60s linear infinite;
-		animation: bg 60s linear infinite;
+		animation: bg 70s linear infinite;
 		-moz-backface-visibility: hidden;
 		-webkit-backface-visibility: hidden;
 		-ms-backface-visibility: hidden;
@@ -246,7 +246,8 @@ input, select, textarea {
 	/* Set your background with this */
 
 		/* background: #348cb2 url("images/bg.jpg") bottom left; */
-		background: #1085e0 url("images/bg_1.jpg") bottom left;
+		background: #1085e0 url("images/bg_2.jpg") bottom left;
+		/* background: #000000 url("images/bg_1.jpg") bottom left; */
 
 		background-repeat: repeat-x;
 		height: 100%;
@@ -555,7 +556,7 @@ input, select, textarea {
 		-moz-animation: header 1s 2.25s forwards;
 		-webkit-animation: header 1s 2.25s forwards;
 		-ms-animation: header 1s 2.25s forwards;
-		animation: header 1s 2.25s forwards;
+		animation: header 0.7s 2.25s forwards;
 		-moz-backface-visibility: hidden;
 		-webkit-backface-visibility: hidden;
 		-ms-backface-visibility: hidden;
