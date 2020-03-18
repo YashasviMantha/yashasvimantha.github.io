@@ -1,94 +1,11 @@
 <html>
 
+
+<script type="text/javascript" src="assets/js/credits.js"></script>
+<link rel="stylesheet" href="assets/css/credits.css">
+
 <body onload="onLoadFunction()" bgcolor="#000">
 
-  <style>
-    body {
-      overflow: hidden;
-      /* Hide scrollbars */
-    }
-
-    @font-face {
-      font-family: "Credits";
-      /* src: url("../webfonts/BrightShine-Title/brightshine_script_typeface-webfont.woff") format("woff"); */
-      src: url("assets/webfonts/Credits/Credits.ttf") format("truetype");
-      /* src: url("../webfonts/manteka/manteka.ttf") format("truetype"); */
-    }
-
-    /* @keyframes moving {
-      from {
-        top: 700px;
-      }
-
-       to {top : -100px;}
-    to {
-      top: -700px;
-    }
-
-    }
-
-    @-webkit-keyframes moving {
-      from {
-        top: 700px;
-      }
-
-      to {
-        top: -700px;
-      }
-    }
- */
-
-
-    #movetxt {
-      animation: moving 45s infinite;
-      -webkit-animation: moving 45s infinite;
-      position: relative;
-
-
-    }
-
-    #table_pad_up {
-      padding-left: 7em;
-      color: rgb(255, 255, 255);
-
-    }
-
-    .content {
-      /* padding-top: 40px; */
-      overflow: hidden;
-    }
-
-    table {
-      color: rgb(255, 255, 255);
-      margin-left: auto;
-      margin-right: auto;
-      font-family: "Credits";
-
-
-    }
-
-    h1,
-    h2 {
-
-      font-size: 2.5em;
-      color: rgb(255, 255, 255);
-      font-family: "Credits";
-
-    }
-
-    a {
-      text-decoration: none !important;
-      color: rgb(255, 255, 255);
-
-    }
-
-    /* 
-p {
-    color: rgb(255, 255, 255);
-
-}
- */
-  </style>
   <div id="movetxt">
     <center>
       <h1>Credits</h1>
@@ -103,7 +20,11 @@ p {
             <td><a href="https://html5up.net/">HTML5UP</a></td>
           </tr>
           <tr>
-            <td>Contributer</td>
+            <td>Gold-Contributer</td>
+            <td><a href="https://www.linkedin.com/in/bhargav-mantha-079693170/">Mantha Bhargav</a></td>
+          </tr>
+          <tr>
+            <td>Advisor</td>
             <td><a href="http://ajitpanigrahi.com/">Ajit Panigrahi</a></td>
           </tr>
           <tr>
@@ -150,7 +71,7 @@ p {
       <br>
       <br>
 
-      <h2> AND YOU! 🤍 </h2>
+      <h2> AND YOU!  <img src="assets/css/images/heart.png" alt="🤍"> </h2>
 
       <!-- <h5>
       Computer Specs
@@ -164,28 +85,7 @@ p {
   </div>
 </body>
 <script>
-  let onLoadFunction = () => {
-    myMove();
-  }
 
-  function myMove() {
-    var element = document.getElementById("movetxt");
-    var pos = screen.height - 170;
-    console.log(pos);
-    var id = setInterval(frame, 4);
-    function frame() {
-      console.log(pos)
-      
-      pos -= 1;
-      element.style.top = `${pos}px`;
-      if (pos === -element.clientHeight) {
-        console.log(">>>>")
-        pos = element.clientHeight;
-
-        // pos = `${parseInt(pos) + parseInt(element.clientHeight)}`;
-      }
-    }
-  }
 </script>
 
 </html>
