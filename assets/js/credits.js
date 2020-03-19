@@ -1,25 +1,17 @@
-let onLoadFunction = () => {
-    myMove();
-  }
+const onLoadFunction = () => {
+  myMove();
+}
 
-  function myMove() {
-    
-    var element = document.getElementById("movetxt");
-    element.style.marginTop = screen.height - 160;  
-    var pos = screen.height - 160;
-    // var pos = screen.height;
-    // console.log(pos);
-    var id = setInterval(frame, 1);
-    function frame() {
-      // console.log(pos)
-      
-      pos -= 0.5;
-      element.style.top = `${pos}px`;
-      if (pos === -element.clientHeight) {
-        // console.log(">>>>")
-        pos = element.clientHeight;
+function myMove() {
+  const movetxt = document.getElementById("movetxt");
+  const screenHeight = screen.height;
 
-        // pos = `${parseInt(pos) + parseInt(element.clientHeight)}`;
-      }
+  let pos = screenHeight;
+  let id = setInterval(() => {
+    pos -= 0.5;
+    movetxt.style.top = `${pos}px`;
+    if (pos === -movetxt.clientHeight) {
+      pos = screenHeight;
     }
-  }
+  }, 1);
+}
