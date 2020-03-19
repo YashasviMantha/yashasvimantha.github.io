@@ -3,12 +3,15 @@ let onLoadFunction = () => {
   }
 
   function myMove() {
+    
     var element = document.getElementById("movetxt");
+    element.style.marginTop = screen.height - 160;  
     var pos = screen.height - 160;
-    console.log(pos);
-    var id = setInterval(frame, 10);
+    // var pos = screen.height;
+    // console.log(pos);
+    var id = setInterval(frame, 1);
     function frame() {
-      console.log(pos)
+      // console.log(pos)
       
       pos -= 0.5;
       element.style.top = `${pos}px`;
