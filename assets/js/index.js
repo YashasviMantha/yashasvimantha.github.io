@@ -5,21 +5,20 @@ const onLoadFunction = () => {
 
 async function change_headline() {
     var elem = document.getElementById("head_line");
-    var array = ["Chess Player", "ML Researcher", "Amature Writer", "Nerd", "Extrovert","Pirate","Prankster"];
-
-    setInterval(() => {
-        // for (let i = 0; i < 5; i++) {
-            elem.innerText = array[Math.floor(array.length * Math.random())];
-    
-    }, 1000);
-
-}
-
-const promiseReturningFunction = (element) => {
-    return new Promise((resolve, reject) => {
-        resolve(setTimeout(() => {
-            return element;
-        }), 200)
-    })
+    var array = ["Chess Player", "ML Researcher", "Amature Writer", "Nerd", "Extrovert","Pirate","Prankster","Mumbaikar","Chaat Lover"];
+    var i = 0;
+    while(true)
+    {
+        if(i == array.length)
+        {
+            i = 0;   
+        }
+        else
+        {
+            elem.innerText = array[i].toUpperCase();
+            i = i + 1;
+            await new Promise(r => setTimeout(r, 1000));
+        }
+    }
 
 }

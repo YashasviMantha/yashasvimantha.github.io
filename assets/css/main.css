@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,900");
 @import url("fontawesome-all.min.css");
 
-@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Chivo&display=swap');
 /*
 	Aerial by HTML5 UP
 	html5up.net | @ajlkn
@@ -11,8 +11,16 @@
 
 /* MY CODE --------------------------------------------------------------------- */
 
+@font-face {
+    font-family: "HeadLine";
+    /* src: url("../webfonts/BrightShine-Title/brightshine_script_typeface-webfont.woff") format("woff"); */
+    src: url("../webfonts/HeadLine/HeadLine.ttf") format("truetype");
+}
+
+
 #head_line{
-    font-family: 'Montserrat';
+    font-family: 'Chivo';
+    
     /* font-weight: bold; */
 }
 
@@ -24,14 +32,6 @@
     src: url("../webfonts/Stay-Classy-Free-Font/Stay\ Classy\ SLDT.ttf") format("truetype");
     /* src: url("../webfonts/manteka/manteka.ttf") format("truetype"); */
     font-stretch: normal;
-    font-stretch: normal;
-    font-stretch: normal;
-	font-stretch: normal; 
-    font-stretch: normal;
-    font-weight: normal;
-	font-weight: normal; 
-    font-weight: normal;
-    font-weight: normal;
     font-weight: normal;
     font-style: normal;
 }
