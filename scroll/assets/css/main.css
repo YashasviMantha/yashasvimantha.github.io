@@ -189,12 +189,13 @@ body {
     color: #3a3939;
     text-shadow: 0 0 0.5px rgba(58, 57, 57, 0.25);
     -webkit-text-stroke: 0.25px;
-    background-size: 100%;
+    background-size: auto;
     background-position: center;
-    height: 150vh;
+    /* height: 100vh; */
     background-image: url("../../images/mon.jpg");
-    background-repeat: no-repeat;
+    background-repeat: no-repeat !important;
     background-attachment: fixed;
+    object-fit: fill;
 }
 
 
