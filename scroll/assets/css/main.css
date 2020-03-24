@@ -94,7 +94,7 @@ video {
     font-size: 100%;
     font: inherit;
     vertical-align: baseline;
-    
+
 }
 
 article,
@@ -163,6 +163,30 @@ textarea {
 }
 
 
+.yash_div:hover {
+
+    color: #0858fe;
+
+}
+
+
+
+/* .yash_div>img{
+    filter: blur(0.95px);
+    filter: brightness(80%);
+} */
+.yash_div:hover {
+    filter: none;
+    transform: scale(1.0125);
+
+    transition: all .4s ease-in-out;
+
+
+
+
+}
+
+
 /* Basic */
 
 html {
@@ -191,12 +215,17 @@ body {
     -webkit-text-stroke: 0.25px;
     background-size: auto;
     background-position: center;
-    /* height: 100vh; */
+    max-height: 100vh;
     background-image: url("../../images/mon.jpg");
     background-repeat: no-repeat !important;
     background-attachment: fixed;
-    object-fit: fill;
+    /* object-fit: fill; */
+    /* min-height: 100vh; */
+    background-size: cover;
+
 }
+
+/*  */
 
 
 body.is-preload *,
@@ -271,14 +300,14 @@ a {
     -webkit-transition: border-color 0.35s ease-in-out, color 0.35s ease-in-out;
     -ms-transition: border-color 0.35s ease-in-out, color 0.35s ease-in-out;
     transition: border-color 0.35s ease-in-out, color 0.35s ease-in-out;
-    color: #35b88f;
+    color: #3a3939;
     text-shadow: 0 0 0.5px rgba(53, 184, 143, 0.25);
     text-decoration: none;
     border-bottom: dotted 1px rgba(53, 184, 143, 0.5);
 }
 
 a:hover {
-    border-bottom-color: rgba(53, 184, 143, 0);
+    border-bottom-color: #0858fe;
 }
 
 sub {
@@ -1594,6 +1623,7 @@ article:last-child {
 .image {
     display: inline-block;
     border: 0;
+
 }
 
 .image img {
@@ -1615,6 +1645,7 @@ article:last-child {
 .image.left {
     float: left;
     margin: 0 2em 2em 0;
+
 }
 
 .image.centered {
@@ -1968,8 +1999,10 @@ button.style3:hover,
     top: 0;
     width: 50%;
     height: 100%;
-    background: #152E33;
+    background: rgba(0, 213, 255, 0);
     overflow: hidden;
+
+
 }
 
 .box.style1 .image img {
@@ -1977,6 +2010,8 @@ button.style3:hover,
     top: 0;
     height: 100%;
     width: auto;
+    object-fit: cover;
+
 }
 
 .box.style1 .inner> :last-child {
