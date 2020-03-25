@@ -765,8 +765,8 @@ a:hover {
     left: 2em;
     line-height: 6em;
     position: absolute;
-    text-align: left;
-    width: 50%;
+    text-align: center;
+    width: 100%;
     text-decoration: none;
 }
 
