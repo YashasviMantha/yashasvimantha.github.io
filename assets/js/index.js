@@ -1,24 +1,18 @@
 const onLoadFunction = () => {
-    change_headline();
+    change_heading();
+
 }
 
 
-async function change_headline() {
-    var elem = document.getElementById("head_line");
-    var array = ["Chess Player", "ML Researcher", "Amature Writer", "Nerd", "Extrovert","Pirate","Prankster","Mumbaikar","Chaat Lover"];
-    var i = 0;
-    while(true)
-    {
-        if(i == array.length)
-        {
-            i = 0;   
-        }
-        else
-        {
-            elem.innerText = array[i].toUpperCase();
-            i = i + 1;
-            await new Promise(r => setTimeout(r, 1000));
-        }
+function change_heading() {
+
+    const width=screen.width;
+    const h1element=document.getElementById("mainName")
+
+    if(width<380){
+        h1element.innerHTML="<p>Yashasvi</p><p> Mantha</p>"
     }
 
 }
+
+

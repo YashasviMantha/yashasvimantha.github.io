@@ -21,9 +21,9 @@
 	<meta name="keywords" content="Chess Player,ML Researcher,Amature Writer,Nerd,Extrovert,Pirate,Prankster,Mumbaikar">
 	<meta name="author" content="Yashasvi Mantha">
 	<meta name="description" content="This page describes Yashasvi Mantha and his journy in life." /> <!-- Maximum 150 words -->
-
+	<script type="text/javascript" src="./assets/js/index.js"></script>
+		
 </head>
-<!-- <script type="text/javascript" src="assets/js/index.js"></script> -->
 
 
 <body class="is-preload">
@@ -34,7 +34,7 @@
 
 			<!-- Header -->
 			<header id="header">
-				<h1>Yashasvi Mantha</h1>
+				<h1 id="mainName">Yashasvi Mantha</h1>
 				<!-- <p>  ML Researcher &nbsp;&bull;&nbsp; Amateur  Writer&nbsp;&bull;&nbsp; Chess Competitor    </p> -->
 				<!-- <p id="head_line" style="font-size: 1rem;margin-top: 0.5rem;margin-bottom: -1.3rem;">ML Researcher</p> -->
 
@@ -69,6 +69,7 @@
 	<script>
 		window.onload = async function () {
 			document.body.classList.remove('is-preload');
+			onLoadFunction();
 		}
 		window.ontouchmove = function () {
 			return false;
