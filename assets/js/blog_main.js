@@ -110,7 +110,20 @@
 			 
 			function () {
 			   $(this).css("transform", "scale(1)");
-			   $(this).css("transition", "all .4s ease-in-out");
+			   $(this).css("transition", "all .2s ease-in-out");
+
+			}
+		 );
+
+		 $('.yash_div_image').hover(
+				
+			function () {
+			   $(this).css("transform","scale(1.05)");
+			}, 
+			 
+			function () {
+			   $(this).css("transform", "scale(1)");
+			   $(this).css("transition", "all .2s ease-in-out");
 
 			}
 		 );
