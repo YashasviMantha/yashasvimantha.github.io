@@ -21,6 +21,10 @@
 	font-size: 1.1em;
 }
 
+#yash_link {
+	border-bottom: dotted 1px;
+}
+
 html,
 body,
 div,
