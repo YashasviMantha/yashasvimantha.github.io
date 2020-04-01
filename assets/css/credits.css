@@ -24,7 +24,8 @@ a {
 
 }
 
-h1 {
+h1,
+h2 {
   color: rgb(255, 255, 255);
   font-family: Credits;
 
@@ -33,6 +34,12 @@ h1 {
 .table>tbody>tr>td,
 .table>tbody>tr>th {
   border-top: none;
+}
+
+h2>img {
+  margin-top: -5px;
+  height: 2rem;
+  width: 1em;
 }
 
 #movetxt {
