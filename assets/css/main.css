@@ -4,27 +4,114 @@
 
 /* MY CODE --------------------------------------------------------------------- */
 
-@font-face {
-  font-family: "HeadLine";
-  src: url("../webfonts/HeadLine/HeadLine.ttf") format("truetype");
-}
 
 #head_line {
   font-family: 'Chivo';
 }
 
-@font-face {
+/* @font-face {
   font-family: "Title-Brightshine";
   src: url("../webfonts/Stay-Classy-Free-Font/Stay\ Classy\ SLDT.otf") format("opentype");
   src: url("../webfonts/Stay-Classy-Free-Font/Stay\ Classy\ SLDT.ttf") format("truetype");
   font-stretch: normal;
   font-weight: normal;
   font-style: normal;
+} */
+
+@font-face {
+  font-family: 'stay_classy_sldtregular';
+  src: url('../webfonts/Stay-Classy-Free-Font/fix/stay_classy_sldt-webfont.woff2') format('woff2'),
+    url('../webfonts/Stay-Classy-Free-Font/fix/stay_classy_sldt-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+
+
 }
 
 /* ------------------------------------------------------------------------------- */
 
-html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
   margin: 0;
   padding: 0;
   border: 0;
@@ -33,7 +120,17 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
   vertical-align: baseline;
 }
 
-article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
   display: block;
 }
 
@@ -41,15 +138,20 @@ body {
   line-height: 1;
 }
 
-ol, ul {
+ol,
+ul {
   list-style: none;
 }
 
-blockquote, q {
+blockquote,
+q {
   quotes: none;
 }
 
-blockquote:before, blockquote:after, q:before, q:after {
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
   content: '';
   content: none;
 }
@@ -73,7 +175,9 @@ input::-moz-focus-inner {
   padding: 0;
 }
 
-input, select, textarea {
+input,
+select,
+textarea {
   -moz-appearance: none;
   -webkit-appearance: none;
   -ms-appearance: none;
@@ -86,7 +190,9 @@ html {
   box-sizing: border-box;
 }
 
-*, *:before, *:after {
+*,
+*:before,
+*:after {
   box-sizing: inherit;
 }
 
@@ -95,7 +201,9 @@ body {
   overflow: hidden;
 }
 
-body.is-preload *, body.is-preload *:before, body.is-preload *:after {
+body.is-preload *,
+body.is-preload *:before,
+body.is-preload *:after {
   -moz-animation: none !important;
   -webkit-animation: none !important;
   -ms-animation: none !important;
@@ -106,7 +214,10 @@ body.is-preload *, body.is-preload *:before, body.is-preload *:after {
   transition: none !important;
 }
 
-body, input, select, textarea {
+body,
+input,
+select,
+textarea {
   color: #fff;
   font-family: 'Source Sans Pro', sans-serif;
   font-size: 15pt;
@@ -168,6 +279,7 @@ a:hover {
   0% {
     opacity: 0;
   }
+
   100% {
     opacity: 1;
   }
@@ -177,6 +289,7 @@ a:hover {
   0% {
     opacity: 0;
   }
+
   100% {
     opacity: 1;
   }
@@ -186,6 +299,7 @@ a:hover {
   0% {
     opacity: 0;
   }
+
   100% {
     opacity: 1;
   }
@@ -195,6 +309,7 @@ a:hover {
   0% {
     opacity: 0;
   }
+
   100% {
     opacity: 1;
   }
@@ -243,6 +358,7 @@ a:hover {
     -ms-transform: translate3d(0, 0, 0);
     transform: translate3d(0, 0, 0);
   }
+
   100% {
     -moz-transform: translate3d(-2250px, 0, 0);
     -webkit-transform: translate3d(-2250px, 0, 0);
@@ -258,6 +374,7 @@ a:hover {
     -ms-transform: translate3d(0, 0, 0);
     transform: translate3d(0, 0, 0);
   }
+
   100% {
     -moz-transform: translate3d(-2250px, 0, 0);
     -webkit-transform: translate3d(-2250px, 0, 0);
@@ -273,6 +390,7 @@ a:hover {
     -ms-transform: translate3d(0, 0, 0);
     transform: translate3d(0, 0, 0);
   }
+
   100% {
     -moz-transform: translate3d(-2250px, 0, 0);
     -webkit-transform: translate3d(-2250px, 0, 0);
@@ -288,6 +406,7 @@ a:hover {
     -ms-transform: translate3d(0, 0, 0);
     transform: translate3d(0, 0, 0);
   }
+
   100% {
     -moz-transform: translate3d(-2250px, 0, 0);
     -webkit-transform: translate3d(-2250px, 0, 0);
@@ -307,6 +426,7 @@ a:hover {
   0% {
     opacity: 0;
   }
+
   100% {
     opacity: 1;
   }
@@ -316,6 +436,7 @@ a:hover {
   0% {
     opacity: 0;
   }
+
   100% {
     opacity: 1;
   }
@@ -325,6 +446,7 @@ a:hover {
   0% {
     opacity: 0;
   }
+
   100% {
     opacity: 1;
   }
@@ -334,6 +456,7 @@ a:hover {
   0% {
     opacity: 0;
   }
+
   100% {
     opacity: 1;
   }
@@ -386,6 +509,7 @@ a:hover {
     transform: translate3d(0, 1em, 0);
     opacity: 0;
   }
+
   100% {
     -moz-transform: translate3d(0, 0, 0);
     -webkit-transform: translate3d(0, 0, 0);
@@ -403,6 +527,7 @@ a:hover {
     transform: translate3d(0, 1em, 0);
     opacity: 0;
   }
+
   100% {
     -moz-transform: translate3d(0, 0, 0);
     -webkit-transform: translate3d(0, 0, 0);
@@ -420,6 +545,7 @@ a:hover {
     transform: translate3d(0, 1em, 0);
     opacity: 0;
   }
+
   100% {
     -moz-transform: translate3d(0, 0, 0);
     -webkit-transform: translate3d(0, 0, 0);
@@ -437,6 +563,7 @@ a:hover {
     transform: translate3d(0, 1em, 0);
     opacity: 0;
   }
+
   100% {
     -moz-transform: translate3d(0, 0, 0);
     -webkit-transform: translate3d(0, 0, 0);
@@ -454,6 +581,7 @@ a:hover {
     transform: translate3d(0, 1em, 0);
     opacity: 0;
   }
+
   100% {
     -moz-transform: translate3d(0, 0, 0);
     -webkit-transform: translate3d(0, 0, 0);
@@ -471,6 +599,7 @@ a:hover {
     transform: translate3d(0, 1em, 0);
     opacity: 0;
   }
+
   100% {
     -moz-transform: translate3d(0, 0, 0);
     -webkit-transform: translate3d(0, 0, 0);
@@ -488,6 +617,7 @@ a:hover {
     transform: translate3d(0, 1em, 0);
     opacity: 0;
   }
+
   100% {
     -moz-transform: translate3d(0, 0, 0);
     -webkit-transform: translate3d(0, 0, 0);
@@ -505,6 +635,7 @@ a:hover {
     transform: translate3d(0, 1em, 0);
     opacity: 0;
   }
+
   100% {
     -moz-transform: translate3d(0, 0, 0);
     -webkit-transform: translate3d(0, 0, 0);
@@ -538,11 +669,11 @@ a:hover {
 }
 
 #header h1 {
-  font-size: 5.35em;
-  font-weight: 900;
+  font-size: 6.00em;
+  font-weight: 400;
   letter-spacing: -0.035em;
   line-height: 1em;
-  font-family: "Title-Brightshine";
+  font-family: "stay_classy_sldtregular";
   transform: scale(2, 1);
 }
 
@@ -714,10 +845,15 @@ a:hover {
 /* Wide */
 
 @media screen and (max-width: 1680px) {
+
   /* Basic */
-  body, input, select, textarea {
+  body,
+  input,
+  select,
+  textarea {
     font-size: 13pt;
   }
+
   /* BG */
   @-moz-keyframes bg {
     0% {
@@ -726,6 +862,7 @@ a:hover {
       -ms-transform: translate3d(0, 0, 0);
       transform: translate3d(0, 0, 0);
     }
+
     100% {
       -moz-transform: translate3d(-1500px, 0, 0);
       -webkit-transform: translate3d(-1500px, 0, 0);
@@ -733,6 +870,7 @@ a:hover {
       transform: translate3d(-1500px, 0, 0);
     }
   }
+
   @-webkit-keyframes bg {
     0% {
       -moz-transform: translate3d(0, 0, 0);
@@ -740,6 +878,7 @@ a:hover {
       -ms-transform: translate3d(0, 0, 0);
       transform: translate3d(0, 0, 0);
     }
+
     100% {
       -moz-transform: translate3d(-1500px, 0, 0);
       -webkit-transform: translate3d(-1500px, 0, 0);
@@ -747,6 +886,7 @@ a:hover {
       transform: translate3d(-1500px, 0, 0);
     }
   }
+
   @-ms-keyframes bg {
     0% {
       -moz-transform: translate3d(0, 0, 0);
@@ -754,6 +894,7 @@ a:hover {
       -ms-transform: translate3d(0, 0, 0);
       transform: translate3d(0, 0, 0);
     }
+
     100% {
       -moz-transform: translate3d(-1500px, 0, 0);
       -webkit-transform: translate3d(-1500px, 0, 0);
@@ -761,6 +902,7 @@ a:hover {
       transform: translate3d(-1500px, 0, 0);
     }
   }
+
   @keyframes bg {
     0% {
       -moz-transform: translate3d(0, 0, 0);
@@ -768,6 +910,7 @@ a:hover {
       -ms-transform: translate3d(0, 0, 0);
       transform: translate3d(0, 0, 0);
     }
+
     100% {
       -moz-transform: translate3d(-1500px, 0, 0);
       -webkit-transform: translate3d(-1500px, 0, 0);
@@ -775,6 +918,7 @@ a:hover {
       transform: translate3d(-1500px, 0, 0);
     }
   }
+
   #bg {
     background-size: 1500px auto;
     width: 4500px;
@@ -784,10 +928,15 @@ a:hover {
 /* Normal */
 
 @media screen and (max-width: 1280px) {
+
   /* Basic */
-  body, input, select, textarea {
+  body,
+  input,
+  select,
+  textarea {
     font-size: 12pt;
   }
+
   /* BG */
   @-moz-keyframes bg {
     0% {
@@ -796,6 +945,7 @@ a:hover {
       -ms-transform: translate3d(0, 0, 0);
       transform: translate3d(0, 0, 0);
     }
+
     100% {
       -moz-transform: translate3d(-750px, 0, 0);
       -webkit-transform: translate3d(-750px, 0, 0);
@@ -803,6 +953,7 @@ a:hover {
       transform: translate3d(-750px, 0, 0);
     }
   }
+
   @-webkit-keyframes bg {
     0% {
       -moz-transform: translate3d(0, 0, 0);
@@ -810,6 +961,7 @@ a:hover {
       -ms-transform: translate3d(0, 0, 0);
       transform: translate3d(0, 0, 0);
     }
+
     100% {
       -moz-transform: translate3d(-750px, 0, 0);
       -webkit-transform: translate3d(-750px, 0, 0);
@@ -817,6 +969,7 @@ a:hover {
       transform: translate3d(-750px, 0, 0);
     }
   }
+
   @-ms-keyframes bg {
     0% {
       -moz-transform: translate3d(0, 0, 0);
@@ -824,6 +977,7 @@ a:hover {
       -ms-transform: translate3d(0, 0, 0);
       transform: translate3d(0, 0, 0);
     }
+
     100% {
       -moz-transform: translate3d(-750px, 0, 0);
       -webkit-transform: translate3d(-750px, 0, 0);
@@ -831,6 +985,7 @@ a:hover {
       transform: translate3d(-750px, 0, 0);
     }
   }
+
   @keyframes bg {
     0% {
       -moz-transform: translate3d(0, 0, 0);
@@ -838,6 +993,7 @@ a:hover {
       -ms-transform: translate3d(0, 0, 0);
       transform: translate3d(0, 0, 0);
     }
+
     100% {
       -moz-transform: translate3d(-750px, 0, 0);
       -webkit-transform: translate3d(-750px, 0, 0);
@@ -845,6 +1001,7 @@ a:hover {
       transform: translate3d(-750px, 0, 0);
     }
   }
+
   #bg {
     background-size: 750px auto;
     width: 2250px;
@@ -854,13 +1011,19 @@ a:hover {
 /* Mobile */
 
 @media screen and (max-width: 736px) {
+
   /* Basic */
   body {
     min-width: 320px;
   }
-  body, input, select, textarea {
+
+  body,
+  input,
+  select,
+  textarea {
     font-size: 11pt;
   }
+
   /* BG */
   @-moz-keyframes bg {
     0% {
@@ -869,6 +1032,7 @@ a:hover {
       -ms-transform: translate3d(0, 0, 0);
       transform: translate3d(0, 0, 0);
     }
+
     100% {
       -moz-transform: translate3d(-300px, 0, 0);
       -webkit-transform: translate3d(-300px, 0, 0);
@@ -876,6 +1040,7 @@ a:hover {
       transform: translate3d(-300px, 0, 0);
     }
   }
+
   @-webkit-keyframes bg {
     0% {
       -moz-transform: translate3d(0, 0, 0);
@@ -883,6 +1048,7 @@ a:hover {
       -ms-transform: translate3d(0, 0, 0);
       transform: translate3d(0, 0, 0);
     }
+
     100% {
       -moz-transform: translate3d(-300px, 0, 0);
       -webkit-transform: translate3d(-300px, 0, 0);
@@ -890,6 +1056,7 @@ a:hover {
       transform: translate3d(-300px, 0, 0);
     }
   }
+
   @-ms-keyframes bg {
     0% {
       -moz-transform: translate3d(0, 0, 0);
@@ -897,6 +1064,7 @@ a:hover {
       -ms-transform: translate3d(0, 0, 0);
       transform: translate3d(0, 0, 0);
     }
+
     100% {
       -moz-transform: translate3d(-300px, 0, 0);
       -webkit-transform: translate3d(-300px, 0, 0);
@@ -904,6 +1072,7 @@ a:hover {
       transform: translate3d(-300px, 0, 0);
     }
   }
+
   @keyframes bg {
     0% {
       -moz-transform: translate3d(0, 0, 0);
@@ -911,6 +1080,7 @@ a:hover {
       -ms-transform: translate3d(0, 0, 0);
       transform: translate3d(0, 0, 0);
     }
+
     100% {
       -moz-transform: translate3d(-300px, 0, 0);
       -webkit-transform: translate3d(-300px, 0, 0);
@@ -918,23 +1088,29 @@ a:hover {
       transform: translate3d(-300px, 0, 0);
     }
   }
+
   #bg {
     background-size: 300px auto;
     width: 900px;
   }
+
   /* Header */
   #header h1 {
     font-size: 3.5em;
   }
+
   #header p {
     font-size: 1em;
   }
+
   #header nav {
     font-size: 0.7em;
   }
+
   #header nav a:hover {
     font-size: 1em;
   }
+
   #header nav a:active {
     font-size: 1em;
   }
@@ -943,6 +1119,7 @@ a:hover {
 /* Mobile (Portrait) */
 
 @media screen and (max-width: 480px) {
+
   /* BG */
   @-moz-keyframes bg {
     0% {
@@ -951,6 +1128,7 @@ a:hover {
       -ms-transform: translate3d(0, 0, 0);
       transform: translate3d(0, 0, 0);
     }
+
     100% {
       -moz-transform: translate3d(-412.5px, 0, 0);
       -webkit-transform: translate3d(-412.5px, 0, 0);
@@ -958,6 +1136,7 @@ a:hover {
       transform: translate3d(-412.5px, 0, 0);
     }
   }
+
   @-webkit-keyframes bg {
     0% {
       -moz-transform: translate3d(0, 0, 0);
@@ -965,6 +1144,7 @@ a:hover {
       -ms-transform: translate3d(0, 0, 0);
       transform: translate3d(0, 0, 0);
     }
+
     100% {
       -moz-transform: translate3d(-412.5px, 0, 0);
       -webkit-transform: translate3d(-412.5px, 0, 0);
@@ -972,6 +1152,7 @@ a:hover {
       transform: translate3d(-412.5px, 0, 0);
     }
   }
+
   @-ms-keyframes bg {
     0% {
       -moz-transform: translate3d(0, 0, 0);
@@ -979,6 +1160,7 @@ a:hover {
       -ms-transform: translate3d(0, 0, 0);
       transform: translate3d(0, 0, 0);
     }
+
     100% {
       -moz-transform: translate3d(-412.5px, 0, 0);
       -webkit-transform: translate3d(-412.5px, 0, 0);
@@ -986,6 +1168,7 @@ a:hover {
       transform: translate3d(-412.5px, 0, 0);
     }
   }
+
   @keyframes bg {
     0% {
       -moz-transform: translate3d(0, 0, 0);
@@ -993,6 +1176,7 @@ a:hover {
       -ms-transform: translate3d(0, 0, 0);
       transform: translate3d(0, 0, 0);
     }
+
     100% {
       -moz-transform: translate3d(-412.5px, 0, 0);
       -webkit-transform: translate3d(-412.5px, 0, 0);
@@ -1000,10 +1184,12 @@ a:hover {
       transform: translate3d(-412.5px, 0, 0);
     }
   }
+
   #bg {
     background-size: 412.5px auto;
     width: 1237.5px;
   }
+
   #header nav {
     padding: 0 1em;
   }
