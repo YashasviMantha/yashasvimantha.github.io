@@ -7,7 +7,7 @@ async function change_headline() {
   var array = [
     "a chess enthusiast",
     "a ML Researcher",
-    "an amature writer",
+    "an amateur writer",
     "a Madrasi",
     "an extrovert",
     "a pirate",
