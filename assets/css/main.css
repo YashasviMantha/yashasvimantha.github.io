@@ -218,10 +218,11 @@ body.is-preload *:after {
   top: 0.3em;
   right: 0.6em;
   cursor: pointer;
+  transition: all 0.2s ease-in-out;
 }
 .emoji-button:hover {
-  transform: scale(1.2) rotate(20deg);
-  transition: all 0.2s ease-in;
+  transform: scale(1.2) rotate(15deg);
+  /* transition: all 0.2s ease-in; */
 }
 
 body,
