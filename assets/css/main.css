@@ -226,10 +226,6 @@ body.is-preload *:after {
   cursor: pointer;
 }
 
-body {
-  background-color: red;
-}
-
 .modal {
   width: 100%;
   line-height: 1.25rem;
