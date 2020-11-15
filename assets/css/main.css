@@ -213,18 +213,67 @@ body.is-preload *:after {
   transition: none !important;
 }
 
-.emoji-button {
-  position: absolute;
-  top: 0.3em;
-  right: 0.6em;
-  cursor: pointer;
+/* Emoji button  */
+#emoji-button {
+  position: fixed;
+  right: 0.55em;
+  top: 0.55em;
   transition: all 0.2s ease-in-out;
 }
-.emoji-button:hover {
-  transform: scale(1.2) rotate(15deg);
-  /* transition: all 0.2s ease-in; */
+
+#emoji-button:hover {
+  transform: rotate(20deg) scale(1.2);
+  cursor: pointer;
 }
 
+body {
+  background-color: red;
+}
+
+.modal {
+  width: 100%;
+  line-height: 1.25rem;
+  max-width: 650px;
+  padding: 1rem 2rem 1.1rem;
+  border-radius: 0.5rem;
+  position: fixed;
+  top: 0.4em;
+  right: 0.001px;
+  transform: scale(0.8);
+  opacity: 1;
+  -webkit-backdrop-filter: blur(20em);
+  backdrop-filter: blur(10em);
+  background-color: rgba(255, 255, 255, 0.5);
+  transition: all 0.2s ease-in-out;
+}
+
+.modal h3 {
+  font-weight: 520;
+  padding: 0.4rem;
+  font-size: 30px;
+}
+.modal p {
+  font-size: 19px;
+  padding: 0.3rem;
+  word-spacing: 1.5px;
+}
+
+.cross {
+  font-size: 1rem;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  color: #000;
+  font-weight: 900;
+  cursor: pointer;
+  line-height: 1rem;
+  transition: all 0.9s ease-in-out;
+}
+.cross:hover {
+  transform: rotate(500deg);
+  /* animation: rotate 1.5s linear infinite; */
+}
+/* emoji button end */
 body,
 input,
 select,

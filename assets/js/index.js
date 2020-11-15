@@ -1,17 +1,33 @@
-const onLoadFunction = () => {
-    change_heading();
-    // alert("Hi! Thanks for visiting. The site is still under active development so feedback would be highly appreciated. Now click on OK and hop in!");
+function toggleMessage(obj) {
+  console.log(obj.style.display);
+  if (obj.style.display === "none") {
+    obj.style.display = "block";
+  } else {
+    obj.style.display = "none";
+  }
 }
 
-function change_heading() {
+document.addEventListener("DOMContentLoaded", function (event) {
+  const closeBtn = document.querySelector("#closeBtn");
+  const messageBox = document.querySelector("#msgModal");
+  const emojiBut = document.querySelector("#emoji-button");
 
-    const width=screen.width;
-    const h1element=document.getElementById("mainName")
+  emojiBut.style.display = "block";
+  messageBox.style.display = "none";
+  console.log(emojiBut.style.display);
 
-    if(width<380){
-        h1element.innerHTML="<p>Yashasvi</p><p> Mantha</p>"
-    }
+  // console.log(closeBtn);
 
-}
+  emojiBut.addEventListener("click", () => {
+    toggleMessage(emojiBut);
+    toggleMessage(messageBox);
+    // console.log(messageBox.style.display);
+    console.log("emoji button pressed");
+  });
 
-
+  closeBtn.addEventListener("click", () => {
+    toggleMessage(messageBox);
+    toggleMessage(emojiBut);
+    console.log("cross pressed");
+  });
+});
