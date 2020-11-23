@@ -1,5 +1,5 @@
 function toggleMessage(obj) {
-  console.log(obj.style.display);
+  // console.log(obj.style.display);
   if (obj.style.display === "none") {
     obj.style.display = "block";
   } else {
@@ -14,7 +14,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
 
   emojiBut.style.display = "block";
   messageBox.style.display = "none";
-  console.log(emojiBut.style.display);
+  // console.log(emojiBut.style.display);
 
   // console.log(closeBtn);
 
@@ -22,12 +22,12 @@ document.addEventListener("DOMContentLoaded", function (event) {
     toggleMessage(emojiBut);
     toggleMessage(messageBox);
     // console.log(messageBox.style.display);
-    console.log("emoji button pressed");
+    // console.log("emoji button pressed");
   });
 
   closeBtn.addEventListener("click", () => {
     toggleMessage(messageBox);
     toggleMessage(emojiBut);
-    console.log("cross pressed");
+    // console.log("cross pressed");
   });
 });
