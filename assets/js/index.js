@@ -1,9 +1,9 @@
 function toggleMessage(obj) {
   // console.log(obj.style.display);
-  if (obj.style.display === "none") {
-    obj.style.display = "block";
+  if (obj.style.opacity === "0") {
+    obj.style.opacity = "1";
   } else {
-    obj.style.display = "none";
+    obj.style.opacity = "0";
   }
 }
 
@@ -12,8 +12,8 @@ document.addEventListener("DOMContentLoaded", function (event) {
   const messageBox = document.querySelector("#msgModal");
   const emojiBut = document.querySelector("#emoji-button");
 
-  emojiBut.style.display = "block";
-  messageBox.style.display = "none";
+  emojiBut.style.opacity = "1";
+  messageBox.style.opacity = "0";
   // console.log(emojiBut.style.display);
 
   // console.log(closeBtn);

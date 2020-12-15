@@ -218,14 +218,13 @@ body.is-preload *:after {
   position: fixed;
   right: 0.55em;
   top: 0.55em;
-  transition: all 0.2s ease-in-out;
+  transition: all 0.4s ease-in-out;
 }
 
 #emoji-button:hover {
   transform: rotate(20deg) scale(1.2);
   cursor: pointer;
 }
-
 .modal {
   width: 100%;
   line-height: 1.25rem;
@@ -240,7 +239,7 @@ body.is-preload *:after {
   -webkit-backdrop-filter: blur(20em);
   backdrop-filter: blur(10em);
   background-color: rgba(255, 255, 255, 0.5);
-  transition: all 0.2s ease-in-out;
+  transition: all 0.5s ease-in-out;
 }
 
 .modal h3 {
@@ -263,12 +262,34 @@ body.is-preload *:after {
   font-weight: 900;
   cursor: pointer;
   line-height: 1rem;
-  transition: all 0.9s ease-in-out;
+  /* transition: all 2s ease-in-out; */
 }
 .cross:hover {
-  transform: rotate(500deg);
-  /* animation: rotate 1.5s linear infinite; */
+  /* transform: rotate(500deg); */
+  -webkit-animation: crossSpin linear infinite;
+  -moz-animation: crossSpin linear infinite;
+  animation: crossSpin 1s linear infinite;
+  /* transition: all 10s ease-out; */
+  /* animation-timing-function: 1000s ease-in-out; */
 }
+
+@-moz-keyframes crossSpin {
+  100% {
+    -moz-transform: rotate(360deg);
+  }
+}
+@-webkit-keyframes crossSpin {
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+@keyframes crossSpin {
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
 /* emoji button end */
 body,
 input,
