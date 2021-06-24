@@ -11,7 +11,6 @@ async function change_headline() {
     "a Madrasi",
     "an extrovert",
     "a pirate",
-    "single.  :p",
     "a Mumbaikar",
     "a chaat lover",
     "a data hoarder",
