@@ -5,15 +5,13 @@ const head_line = () => {
 async function change_headline() {
   var elem = document.getElementById("head_line");
   var array = [
-    "a chess enthusiast",
+    "a Data Scientist",
     "a ML Researcher",
     "an amateur writer",
-    "a Madrasi",
-    "an extrovert",
     "a pirate",
-    "a Mumbaikar",
-    "a chaat lover",
+    "a self-learning phytologist",
     "a data hoarder",
+    "an AOE4 enjoyer"
   ];
   var i = 0;
   while (true) {
@@ -22,7 +20,7 @@ async function change_headline() {
     } else {
       elem.innerText = "I am " + array[i] + ".";
       i = i + 1;
-      await new Promise((r) => setTimeout(r, 1000));
+      await new Promise((r) => setTimeout(r, 1500));
     }
   }
 }

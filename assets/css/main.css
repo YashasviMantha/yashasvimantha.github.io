@@ -19,10 +19,8 @@
 
 @font-face {
   font-family: "stay_classy_sldtregular";
-  src: url("../webfonts/Stay-Classy-Free-Font/fix/stay_classy_sldt-webfont.woff2")
-      format("woff2"),
-    url("../webfonts/Stay-Classy-Free-Font/fix/stay_classy_sldt-webfont.woff")
-      format("woff");
+  src: url("../webfonts/Stay-Classy-Free-Font/fix/stay_classy_sldt-webfont.woff2") format("woff2"),
+    url("../webfonts/Stay-Classy-Free-Font/fix/stay_classy_sldt-webfont.woff") format("woff");
   font-weight: normal;
   font-style: normal;
   font-stretch: normal;
@@ -225,6 +223,7 @@ body.is-preload *:after {
   transform: rotate(20deg) scale(1.2);
   cursor: pointer;
 }
+
 .modal {
   width: 100%;
   line-height: 1.25rem;
@@ -247,6 +246,7 @@ body.is-preload *:after {
   padding: 0.4rem;
   font-size: 30px;
 }
+
 .modal p {
   font-size: 19px;
   padding: 0.3rem;
@@ -264,6 +264,7 @@ body.is-preload *:after {
   line-height: 1rem;
   /* transition: all 2s ease-in-out; */
 }
+
 .cross:hover {
   /* transform: rotate(500deg); */
   -webkit-animation: crossSpin linear infinite;
@@ -278,11 +279,13 @@ body.is-preload *:after {
     -moz-transform: rotate(360deg);
   }
 }
+
 @-webkit-keyframes crossSpin {
   100% {
     -webkit-transform: rotate(360deg);
   }
 }
+
 @keyframes crossSpin {
   100% {
     -webkit-transform: rotate(360deg);
@@ -338,7 +341,7 @@ a:hover {
   font-weight: 400;
 }
 
-.icon > .label {
+.icon>.label {
   display: none;
 }
 
@@ -397,11 +400,9 @@ a:hover {
   -webkit-animation: wrapper 3s forwards;
   -ms-animation: wrapper 3s forwards;
   animation: wrapper 3s forwards;
-  background: linear-gradient(
-    0deg,
-    rgba(0, 74, 255, 1) 0%,
-    rgba(43, 159, 250, 1) 100%
-  );
+  background: linear-gradient(0deg,
+      rgba(0, 74, 255, 1) 0%,
+      rgba(43, 159, 250, 1) 100%);
   height: 100%;
   left: 0;
   opacity: 0;
@@ -423,7 +424,7 @@ a:hover {
   -webkit-transform: translate3d(0, 0, 0);
   -ms-transform: translate3d(0, 0, 0);
   transform: translate3d(0, 0, 0);
-  background: url("images/bg_1.png") bottom left;
+  background: url("images/test_bg.png") bottom left;
   background-repeat: repeat-x;
   height: 100%;
   left: 0;
@@ -926,6 +927,7 @@ a:hover {
 /* Wide */
 
 @media screen and (max-width: 1680px) {
+
   /* Basic */
   body,
   input,
@@ -1008,6 +1010,7 @@ a:hover {
 /* Normal */
 
 @media screen and (max-width: 1280px) {
+
   /* Basic */
   body,
   input,
@@ -1090,6 +1093,7 @@ a:hover {
 /* Mobile */
 
 @media screen and (max-width: 736px) {
+
   /* Basic */
   body {
     min-width: 320px;
@@ -1197,6 +1201,7 @@ a:hover {
 /* Mobile (Portrait) */
 
 @media screen and (max-width: 480px) {
+
   /* BG */
   @-moz-keyframes bg {
     0% {
