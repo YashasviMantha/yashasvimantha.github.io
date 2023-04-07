@@ -5,16 +5,12 @@ const head_line = () => {
 async function change_headline() {
   var elem = document.getElementById("head_line");
   var array = [
-    "a chess enthusiast",
+    "a Data Scientist",
     "a ML Researcher",
     "an amateur writer",
-    "a Madrasi",
-    "an extrovert",
     "a pirate",
-    "single.  :p",
-    "a Mumbaikar",
-    "a chaat lover",
     "a data hoarder",
+    "an AOE4 enjoyer"
   ];
   var i = 0;
   while (true) {
