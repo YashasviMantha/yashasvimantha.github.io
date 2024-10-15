@@ -1,0 +1,23 @@
+site_url: 'https://yashasvimantha.com'
+site_name: 'YM'
+author_name: 'Yashasvi Mantha'
+
+directories:
+  posts: 'posts'
+  pages: 'pages'
+  public: 'public'
+  output: 'build'
+  social: 'handels'
+  research: 'research'
+  posts_output: 'build/posts'
+  pages_output: 'build/'
+  
+files:
+  header: 'header.html'
+  footer: 'footer.html'
+  root_index: 'index.md'
+  posts_index: 'pages/posts.md'
+  rss: 'build/index.rss'
+
+misc:
+  post_count: 5
