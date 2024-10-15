@@ -1,4 +1,3 @@
-# ~YM
 
 Hi, I am Yashasvi! I am a **Machine Learning Engineer** and I like **plants**, **technology** and **history**.
 
