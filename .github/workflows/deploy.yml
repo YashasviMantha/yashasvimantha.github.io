@@ -11,10 +11,10 @@ jobs:
 
     steps:
     - name: Checkout repository
-      uses: actions/checkout@master
+      uses: actions/checkout@v2
 
     - name: Set up Ruby
-      uses: ruby/setup-ruby@v2
+      uses: ruby/setup-ruby@v1
       with:
         ruby-version: 3.0  # Change this to your desired Ruby version
 
@@ -28,7 +28,7 @@ jobs:
 
     - name: Check Build
       run: ls -al
-      
+
     - name: Deploy to GitHub Pages
       uses: peaceiris/actions-gh-pages@v3
       with:
