@@ -41,7 +41,7 @@ end
 # Grab the title from each markdown file
 def extract_title_from_md(lines)
   first_line = lines.first
-  first_line&.start_with?('# ') ? first_line[2..-1].strip : 'Blog Index'
+  first_line&.start_with?('# ') ? first_line[2..-1].strip : '~YM'
 end
 
 # Convert markdown files
