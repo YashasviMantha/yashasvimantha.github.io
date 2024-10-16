@@ -30,7 +30,7 @@ jobs:
       run: echo "yashasvimantha.com" > ./build/CNAME  # Replace with your custom domain
 
     - name: Check Build
-      run: ls -al
+      run: ls -al ./build
 
     - name: Deploy to GitHub Pages
       uses: peaceiris/actions-gh-pages@v3

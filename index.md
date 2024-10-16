@@ -6,7 +6,7 @@ As an ML engineer, specializing in dealing with textual data (**NLP**), I help t
 I’m passionate about open source software, minimal design and food forests. This small piece of internet is home to my ever growing brain dumps.
 
 
-test
+test is working
 
 
 ## Latest Posts
