@@ -25,6 +25,9 @@ jobs:
 
     - name: Build website
       run: make build
+    
+    - name: Create CNAME file
+      run: echo "yashasvimantha.com" > ./build/CNAME  # Replace with your custom domain
 
     - name: Check Build
       run: ls -al
