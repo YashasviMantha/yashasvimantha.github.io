@@ -38,6 +38,11 @@ def replace_title_placeholder(header_content, title)
   header_content.gsub('<title>{{TITLE}}</title>', "<title>#{title}</title>")
 end
 
+def replace_build_timestamp_placeholder(footer_content)
+  current_date = DateTime.now.strftime("%Y-%m-%d")
+  footer_content.gsub('{{BUILD_TIMESTAMP}}', current_date)
+end
+
 # Grab the title from each markdown file
 def extract_title_from_md(lines)
   first_line = lines.first
@@ -65,6 +70,7 @@ def process_markdown_files(input_directory, output_directory, header_content, fo
     FileUtils.mkdir_p(item_dir)
 
     header = replace_title_placeholder(header_content, title)
+
     File.write(output_file, header + html_content + footer_content)
 
     items << { title: title, date: date, link: relative_path + '/', content: html_content }
@@ -133,6 +139,7 @@ end
 
 # Process header, posts, pages, etc.
 header_content = File.read(header_file)
+footer_content = replace_build_timestamp_placeholder(footer_content)
 
 posts = process_markdown_files(posts_dir, posts_output_dir, header_content, footer_content).sort_by { |post| -post[:date].to_time.to_i }
 pages = process_markdown_files(pages_dir, pages_output_dir, header_content, footer_content)
