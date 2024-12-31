@@ -8,7 +8,7 @@
     <title>YM RSS Feed</title>
     <link>https://yashasvimantha.com</link>
     <description>The official RSS Feed for https://yashasvimantha.com</description>
-    <pubDate>Sun, 20 Oct 2024 11:09:12 +0000</pubDate>
+    <pubDate>Tue, 31 Dec 2024 11:22:43 +0000</pubDate>
     <item>
       <title>Why I shifted to my current website template.</title>
       <link>https://yashasvimantha.com/posts/minimal-design/</link>
@@ -198,7 +198,7 @@ that last line which continues item 3 above).&lt;/p&gt;
 
 &lt;p&gt;Here’s a link to &lt;a href=&quot;http://foo.bar&quot;&gt;a website&lt;/a&gt;, to a &lt;a href=&quot;local-doc.html&quot;&gt;local
 doc&lt;/a&gt;, and to a &lt;a href=&quot;#an-h2-header&quot;&gt;section heading in the current
-doc&lt;/a&gt;. Here’s a footnote &lt;sup id=&quot;fnref:1&quot; role=&quot;doc-noteref&quot;&gt;&lt;a href=&quot;#fn:1&quot; class=&quot;footnote&quot; rel=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt;.&lt;/p&gt;
+doc&lt;/a&gt;. Here’s a footnote &lt;sup id=&quot;fnref:1&quot;&gt;&lt;a href=&quot;#fn:1&quot; class=&quot;footnote&quot; rel=&quot;footnote&quot; role=&quot;doc-noteref&quot;&gt;1&lt;/a&gt;&lt;/sup&gt;.&lt;/p&gt;
 
 &lt;p&gt;Tables can look like this:&lt;/p&gt;
 
@@ -273,7 +273,7 @@ term/definition pair to spread things out more.)&lt;/p&gt;
 which you wish to be displayed literally, ex.: `foo`, *bar*, etc.&lt;/p&gt;
 &lt;div class=&quot;footnotes&quot; role=&quot;doc-endnotes&quot;&gt;
   &lt;ol&gt;
-    &lt;li id=&quot;fn:1&quot; role=&quot;doc-endnote&quot;&gt;
+    &lt;li id=&quot;fn:1&quot;&gt;
       &lt;p&gt;Footnote text goes here. &lt;a href=&quot;#fnref:1&quot; class=&quot;reversefootnote&quot; role=&quot;doc-backlink&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
     &lt;/li&gt;
   &lt;/ol&gt;
@@ -282,6 +282,6 @@ which you wish to be displayed literally, ex.: `foo`, *bar*, etc.&lt;/p&gt;
       <pubDate>Sat, 20 Jul 2024 12:00:00 +0000</pubDate>
       <dc:date>2024-07-20T12:00:00+00:00</dc:date>
     </item>
-    <dc:date>2024-10-20T11:09:12+00:00</dc:date>
+    <dc:date>2024-12-31T11:22:43+00:00</dc:date>
   </channel>
 </rss>
