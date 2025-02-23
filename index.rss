@@ -8,7 +8,7 @@
     <title>YM RSS Feed</title>
     <link>https://yashasvimantha.com</link>
     <description>The official RSS Feed for https://yashasvimantha.com</description>
-    <pubDate>Tue, 31 Dec 2024 11:22:43 +0000</pubDate>
+    <pubDate>Sun, 23 Feb 2025 07:54:52 +0000</pubDate>
     <item>
       <title>Why I shifted to my current website template.</title>
       <link>https://yashasvimantha.com/posts/minimal-design/</link>
@@ -282,6 +282,6 @@ which you wish to be displayed literally, ex.: `foo`, *bar*, etc.&lt;/p&gt;
       <pubDate>Sat, 20 Jul 2024 12:00:00 +0000</pubDate>
       <dc:date>2024-07-20T12:00:00+00:00</dc:date>
     </item>
-    <dc:date>2024-12-31T11:22:43+00:00</dc:date>
+    <dc:date>2025-02-23T07:54:52+00:00</dc:date>
   </channel>
 </rss>
