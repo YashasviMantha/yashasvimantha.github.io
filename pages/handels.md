@@ -10,4 +10,4 @@ If you come accross anything else not on here but seem like me; they are either 
  - [Github](https://github.com/YashasviMantha) - Ofcourse.
  - [Medium](https://medium.com/@yashasvimantha) - Some of my write ups end up there.
  - [Chess](https://www.chess.com/member/yashasvimantha) - Incase you wanted to challenge me. 
- - me@{thebaseurl}.com - My email; obviously change the placeholder.
+ - me@{theßaseurl}.com - My email; obviously change the placeholder.
