@@ -8,7 +8,7 @@
     <title>YM RSS Feed</title>
     <link>https://yashasvimantha.com</link>
     <description>The official RSS Feed for https://yashasvimantha.com</description>
-    <pubDate>Sat, 28 Jun 2025 09:08:26 +0000</pubDate>
+    <pubDate>Sat, 28 Jun 2025 09:10:15 +0000</pubDate>
     <item>
       <title>Matryoshka Embeddings - Finding the sweet spot between Embedding size and retrieval quality for Qwen3 0.6b</title>
       <link>https://yashasvimantha.com/posts/matryoshka-tradeoff/</link>
@@ -38,7 +38,8 @@
 
 &lt;h2 id=&quot;results&quot;&gt;Results:&lt;/h2&gt;
 
-&lt;p&gt;&lt;img src=&quot;/public/images/Matryoshka%20Embeddings%20Graph%20of%20performance%20and%20embeddings%20size.png&quot; alt=&quot;Graph of performance and embeddings size&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/public/images/Matryoshka%20Embeddings%20Graph%20of%20performance%20and%20embeddings%20size.png&quot; alt=&quot;Graph of performance and embeddings size&quot; /&gt;
+&lt;sub&gt;Please open image in new tab for better view&lt;/sub&gt;&lt;/p&gt;
 
 &lt;h3 id=&quot;bigger-is-not-always-better&quot;&gt;Bigger is not always better:&lt;/h3&gt;
 &lt;p&gt;Obviously, if we dont slice the embeddings at all; we see the higest score. But around the &lt;code&gt;100-120&lt;/code&gt; range the performance actually goes down. So if someone was considering a 120 size embeddings, it would be better to go lower to 100 than 120.&lt;/p&gt;
@@ -53,7 +54,8 @@
 &lt;h3 id=&quot;drilling-down&quot;&gt;Drilling Down&lt;/h3&gt;
 &lt;p&gt;If we wanted to go crazy and also check how its behaving above &lt;code&gt;650&lt;/code&gt; in a more granular way:&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;/public/images/matryoshka-tradeoff-650-slice.png&quot; alt=&quot;Graph of performance and embeddings size&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/public/images/matryoshka-tradeoff-650-slice.png&quot; alt=&quot;Graph of performance and embeddings size&quot; /&gt;
+&lt;sub&gt;Please open image in new tab for better view&lt;/sub&gt;&lt;/p&gt;
 
 &lt;p&gt;Again, we are looking into numbers that are very close to each other.&lt;/p&gt;
 
@@ -108,6 +110,6 @@ YM&lt;/p&gt;
       <pubDate>Thu, 20 Mar 2025 12:00:00 +0000</pubDate>
       <dc:date>2025-03-20T12:00:00+00:00</dc:date>
     </item>
-    <dc:date>2025-06-28T09:08:26+00:00</dc:date>
+    <dc:date>2025-06-28T09:10:15+00:00</dc:date>
   </channel>
 </rss>
