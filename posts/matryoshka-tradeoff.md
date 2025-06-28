@@ -1,5 +1,7 @@
 # Matryoshka Embeddings - Finding the sweet spot between Embedding size and retrieval quality for Qwen3 0.6b
 
+2025-06-28
+
 We all know about Matryoshka embeddings. If not, its basically the way an embeddings model is trained where we can truncate the embeddings to a given size and still have not so much of a quality drop. There are a lot of advantages of truncating the embeddings to a lower size. One of them being; its cheaper to store the vectors. This becomes important as we scale things up for search. When we have a model that gives out a vector of size `1024` and have to store millions of documents that cost of storing those can add up quite considerably. Especially when we have to store the vectors in memory for low latency. So Matryoshka Representation learning can help us bring down storage costs along with having a minimal quality drop. 
 
 But the question, how much smaller can we go? Obviously just like most things in life, there is a trade-off between quality and compute/storage. This blog is about answering that. 
