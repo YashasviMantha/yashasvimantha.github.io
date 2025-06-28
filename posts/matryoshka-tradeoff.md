@@ -42,7 +42,7 @@ Also above the `650` the gain becomes very small. Almost next to nothing.
 If we wanted to go crazy and also check how its behaving above `650` in a more granular way:
 
 
-![Graph of performance and embeddings size](/public/images/Matryoshka%20Embeddings%20Graph%20of%20performance%20and%20embeddings%20size%20650%20slice.png)
+![Graph of performance and embeddings size](/public/images/Matryoshka%20Embeddings%20Graph%20of%20performance%20and%20embeddings%20size%20650%20Slice.png)
 
 Again, we are looking into numbers that are very close to each other. 
 
