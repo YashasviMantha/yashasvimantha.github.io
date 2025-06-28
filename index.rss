@@ -8,7 +8,63 @@
     <title>YM RSS Feed</title>
     <link>https://yashasvimantha.com</link>
     <description>The official RSS Feed for https://yashasvimantha.com</description>
-    <pubDate>Thu, 20 Mar 2025 12:53:06 +0000</pubDate>
+    <pubDate>Sat, 28 Jun 2025 09:02:23 +0000</pubDate>
+    <item>
+      <title>Matryoshka Embeddings - Finding the sweet spot between Embedding size and retrieval quality for Qwen3 0.6b</title>
+      <link>https://yashasvimantha.com/posts/matryoshka-tradeoff/</link>
+      <description>&lt;h1 id=&quot;matryoshka-embeddings---finding-the-sweet-spot-between-embedding-size-and-retrieval-quality-for-qwen3-06b&quot;&gt;Matryoshka Embeddings - Finding the sweet spot between Embedding size and retrieval quality for Qwen3 0.6b&lt;/h1&gt;
+
+&lt;p&gt;We all know about Matryoshka embeddings. If not, its basically the way an embeddings model is trained where we can truncate the embeddings to a given size and still have not so much of a quality drop. There are a lot of advantages of truncating the embeddings to a lower size. One of them being; its cheaper to store the vectors. This becomes important as we scale things up for search. When we have a model that gives out a vector of size &lt;code&gt;1024&lt;/code&gt; and have to store millions of documents that cost of storing those can add up quite considerably. Especially when we have to store the vectors in memory for low latency. So Matryoshka Representation learning can help us bring down storage costs along with having a minimal quality drop.&lt;/p&gt;
+
+&lt;p&gt;But the question, how much smaller can we go? Obviously just like most things in life, there is a trade-off between quality and compute/storage. This blog is about answering that.&lt;/p&gt;
+
+&lt;p&gt;Choosing a model (that provides a outputs size of 1024 for example); how small can I slice to optimize trade-off?&lt;/p&gt;
+
+&lt;p&gt;Heavily inspired from the &lt;a href=&quot;https://docs.vespa.ai/en/tutorials/hybrid-search.html&quot;&gt;Hybrid Search&lt;/a&gt; post from the vespa team. I thought, lets take a small dataset, brute force the evaluation with different embeddings size and find out.&lt;/p&gt;
+
+&lt;p&gt;So I did exactly that in &lt;a href=&quot;https://github.com/YashasviMantha/matryoshka-analysis/blob/main/analysis.ipynb&quot;&gt;this notebook&lt;/a&gt;. And I wanted to test out the most recent new &lt;a href=&quot;https://huggingface.co/Qwen/Qwen3-Embedding-0.6B&quot;&gt;Qwen3 Embeddings 0.6B&lt;/a&gt; model.&lt;/p&gt;
+
+&lt;p&gt;The testing set I used was the &lt;code&gt;BEIR&lt;/code&gt; slice of &lt;code&gt;nfcorpus&lt;/code&gt;. I calculated the embeddings at full capacity of 1024. And tested right from &lt;code&gt;1&lt;/code&gt; to &lt;code&gt;1024&lt;/code&gt; embeddings size on the test set; with my evaluation method to be &lt;code&gt;nDCG@10&lt;/code&gt;. While I do realize the model isn’t designed to go smaller than &lt;code&gt;32&lt;/code&gt;; I was curious on the performance in smaller sizes.&lt;/p&gt;
+
+&lt;p&gt;The results were quite surprising.&lt;/p&gt;
+
+&lt;p&gt;Some things to keep in mind before getting to the results:
+- The test set is pretty small but a well respected benchmark.
+- &lt;code&gt;nDCG@10&lt;/code&gt; may change with different HSNW configurations. I used chromaDB for the graph
+- Source code present in the &lt;a href=&quot;https://github.com/YashasviMantha/matryoshka-analysis&quot;&gt;github repo&lt;/a&gt;.
+- Ranking is a very data specific task. Similar results might not be reproducible with a different dataset.&lt;/p&gt;
+
+&lt;h2 id=&quot;results&quot;&gt;Results:&lt;/h2&gt;
+
+&lt;p&gt;&lt;img src=&quot;/public/images/Matryoshka%20Embeddings%20Graph%20of%20performance%20and%20embeddings%20size.png&quot; alt=&quot;Graph of performance and embeddings size&quot; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;bigger-is-not-always-better&quot;&gt;Bigger is not always better:&lt;/h3&gt;
+&lt;p&gt;Obviously, if we dont slice the embeddings at all; we see the higest score. But around the &lt;code&gt;100-120&lt;/code&gt; range the performance actually goes down. So if someone was considering a 120 size embeddings, it would be better to go lower to 100 than 120.&lt;/p&gt;
+
+&lt;p&gt;Similarly the quality doesnt always increase with dimensions. &lt;code&gt;762-766&lt;/code&gt; provides better retrieval than &lt;code&gt;768-774&lt;/code&gt;. The increase is always not linear. Or maybe I am being a bit too picky?&lt;/p&gt;
+
+&lt;h3 id=&quot;the-sweet-spot&quot;&gt;The sweet spot&lt;/h3&gt;
+&lt;p&gt;Now, it depends on the retrieval use case but for me, its seems like is around the early &lt;code&gt;400&lt;/code&gt; range is a good trade off. I say this because the incremental gain above &lt;code&gt;450&lt;/code&gt; might be too costly in a resource constrained environment.&lt;/p&gt;
+
+&lt;p&gt;Also above the &lt;code&gt;650&lt;/code&gt; the gain becomes very small. Almost next to nothing.&lt;/p&gt;
+
+&lt;h3 id=&quot;drilling-down&quot;&gt;Drilling Down&lt;/h3&gt;
+&lt;p&gt;If we wanted to go crazy and also check how its behaving above &lt;code&gt;650&lt;/code&gt; in a more granular way:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/public/images/Matryoshka%20Embeddings%20Graph%20of%20performance%20and%20embeddings%20size%20650%20slice.png&quot; alt=&quot;Graph of performance and embeddings size&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Again, we are looking into numbers that are very close to each other.&lt;/p&gt;
+
+&lt;h2 id=&quot;finally&quot;&gt;Finally&lt;/h2&gt;
+&lt;p&gt;The goal here was not to find the perfect embedding size; but to understand if the quality reduction was considerable on size reduction. We can almost half the embedding size and not make the retrieval quality really bad. Which is huge because cutting memory into half is worth exploring. We need a lot more scrutiny here (larger datasets, multiple ranking metrics etc). But I will be using a 512 (for some reason I like this number) on my retrieval tasks.&lt;/p&gt;
+
+&lt;p&gt;If given the choice of either use a single 1024 model or 2 models trained differently but support MLR; I will always pick the latter.&lt;/p&gt;
+
+&lt;p&gt;Let me know if I missed/got something wrong here.&lt;/p&gt;
+</description>
+      <pubDate>Sat, 28 Jun 2025 12:00:00 +0000</pubDate>
+      <dc:date>2025-06-28T12:00:00+00:00</dc:date>
+    </item>
     <item>
       <title>Minimal Design: Why I shifted to my current website template (wruby).</title>
       <link>https://yashasvimantha.com/posts/minimal-design/</link>
@@ -50,6 +106,6 @@ YM&lt;/p&gt;
       <pubDate>Thu, 20 Mar 2025 12:00:00 +0000</pubDate>
       <dc:date>2025-03-20T12:00:00+00:00</dc:date>
     </item>
-    <dc:date>2025-03-20T12:53:06+00:00</dc:date>
+    <dc:date>2025-06-28T09:02:23+00:00</dc:date>
   </channel>
 </rss>
