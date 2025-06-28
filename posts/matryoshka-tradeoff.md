@@ -25,6 +25,7 @@ Some things to keep in mind before getting to the results:
 ## Results:
 
 ![Graph of performance and embeddings size](/public/images/Matryoshka%20Embeddings%20Graph%20of%20performance%20and%20embeddings%20size.png)
+<sub>Please open image in new tab for better view</sub>
 
 ### Bigger is not always better:
 Obviously, if we dont slice the embeddings at all; we see the higest score. But around the `100-120` range the performance actually goes down. So if someone was considering a 120 size embeddings, it would be better to go lower to 100 than 120.
@@ -43,9 +44,10 @@ If we wanted to go crazy and also check how its behaving above `650` in a more g
 
 
 ![Graph of performance and embeddings size](/public/images/matryoshka-tradeoff-650-slice.png)
+<sub>Please open image in new tab for better view</sub>
+
 
 Again, we are looking into numbers that are very close to each other. 
-
 
 ## Finally
 The goal here was not to find the perfect embedding size; but to understand if the quality reduction was considerable on size reduction. We can almost half the embedding size and not make the retrieval quality really bad. Which is huge because cutting memory into half is worth exploring. We need a lot more scrutiny here (larger datasets, multiple ranking metrics etc). But I will be using a 512 (for some reason I like this number) on my retrieval tasks.
