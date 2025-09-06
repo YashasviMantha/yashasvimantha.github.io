@@ -8,7 +8,7 @@
     <title>YM RSS Feed</title>
     <link>https://yashasvimantha.com</link>
     <description>The official RSS Feed for https://yashasvimantha.com</description>
-    <pubDate>Sat, 28 Jun 2025 09:10:15 +0000</pubDate>
+    <pubDate>Sat, 06 Sep 2025 06:21:33 +0000</pubDate>
     <item>
       <title>Matryoshka Embeddings - Finding the sweet spot between Embedding size and retrieval quality for Qwen3 0.6b</title>
       <link>https://yashasvimantha.com/posts/matryoshka-tradeoff/</link>
@@ -110,6 +110,6 @@ YM&lt;/p&gt;
       <pubDate>Thu, 20 Mar 2025 12:00:00 +0000</pubDate>
       <dc:date>2025-03-20T12:00:00+00:00</dc:date>
     </item>
-    <dc:date>2025-06-28T09:10:15+00:00</dc:date>
+    <dc:date>2025-09-06T06:21:33+00:00</dc:date>
   </channel>
 </rss>
