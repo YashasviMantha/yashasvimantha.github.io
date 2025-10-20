@@ -1,7 +1,7 @@
 
 Hi, I am Yashasvi! I am a **Machine Learning Engineer** and I like **plants**, **technology**, and **history**.
 
-As an ML engineer, specializing in dealing with textual data (**NLP**), I help teams build everything from high quality datasets to productionizing NLP models.
+As an ML engineer, specializing in dealing with textual data (**NLP**), I help teams build everything from high quality datasets to productionizing NLP models. Right now, I am interested in developing scalable retrieval and search systems.
 
 I’m passionate about open source software, minimal design, and food forests. This small piece of internet is home to my ever growing brain dumps.
 
