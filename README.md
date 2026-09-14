@@ -35,3 +35,7 @@ etc.).
 3. Run `make build` in the root directory
 4. Upload `build` folder to your server
 5. Share your blog or site!
+
+Python command to quickly serve:
+* `cd build`
+* `python -m http.server 3001`
